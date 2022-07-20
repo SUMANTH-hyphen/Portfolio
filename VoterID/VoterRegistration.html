@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Voter ID</title> 
+        <link rel="stylesheet" href="VoterID.css"> 
+        <style>
+        	table, tr{
+            	margin-left:auto;
+                margin-right:auto;
+            }
+            td{
+            	padding:20px;
+            }
+            form{
+            	margin-left:20%;
+                margin-right:20%;
+            }
+            h1{
+            	text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Voter ID Registration</h1>
+        <form onsubmit="alert('Success');">
+            <table>
+                <tr>
+                    <td>First Name: <input type="text" placeholder="First Name" size="20" required></td>
+                    <td>Last Name: <input type="text" placeholder="Last Name" size="20" required></td>
+                </tr>
+                <tr>
+                    <td>Age: <input type="number" min="18" placeholder="Age" required></td>
+                </tr>  
+                <tr>
+                    <td><lable>Gender:</label>
+                               <input type="radio" name="gender" value="male">Male
+                               <input type="radio" name="gender" value="female">Female
+                </tr>                      
+                <tr>
+                    <td>Date of Birth: <input type="Date" required>
+                </tr>
+                <tr>
+                    <td>Aadhaar Number: <input type="number" min="100000000000" max="999999999999" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+
+
